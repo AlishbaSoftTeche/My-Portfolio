@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alishba Abbas | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header h2 {
+            font-size: 1.5em; /* Adjust the size as needed */
+            color: #ffffff; /* Change color as per your design */
+            margin-top: 10px; /* Space between name and title */
+        }
+
+        .container {
+            max-width: 1000px; /* Wider container */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .about, .skills, .projects, .professional-background, .contact {
+            padding: 30px; /* Increased padding for more space */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            margin: 20px 0; /* Margin to separate from other sections */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        }
+
+        .about {
+            background-color: #d3f8e2; /* Extreme light mint color */
+        }
+
+        .skills {
+            background-image: url('image4.jpeg'); /* Replace with the correct path to your image */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            color: #000000; /* Change text color to black for better visibility */
+        }
+
+        .professional-background {
+            background-color: antiquewhite; /* Replace with your image path */
+            color: hsla(0, 0%, 0%, 0.884); /* Set text color to black for better contrast */
+        }
+
+        .contact {
+            background-color: #e0f7fa; /* Light cyan color */
+        }
+
+        .contact h2 {
+            color: #00796b; /* Darker teal color for header */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between items */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px; /* Button padding */
+            background-color: #00796b; /* Dark teal color for buttons */
+            color: white; /* Text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        }
+
+        .button:hover {
+            background-color: #004d40; /* Darker teal on hover */
+            transform: scale(1.05); /* Slightly enlarge the button */
+        }
+
+        .button:active {
+            background-color: #00332b; /* Even darker on click */
+        }
+
+        .projects {
+            background-color: #e0f7f1; /* Extreme light mint color */
+            color: #333; /* Text color */
+        }
+
+        .header-bg {
+            background-image: url('image3.jpeg'); /* Update with your image path */
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            color: white; /* Change text color for better contrast */
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav a {
+            color: white; /* Change link color for better visibility */
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Hover effect for each section */
+        .about:hover, .skills:hover, .projects:hover, .professional-background:hover, .contact:hover {
+            background-color: #b2ebf2; /* Change to a lighter color on hover */
+            transform: translateY(-5px); /* Move section up on hover */
+        }
+
+        /* Active section background color */
+        .active {
+            background-color: #80deea; /* Different color for active section */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-bg">
+            <h1>Alishba Abbas</h1>
+            <h2>AI/ML Developer</h2> <!-- Added title -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about" id="about">
+            <h2>About Me</h2>
+            <p>Proficient Python developer advancing expertise in Machine Learning. Passionate about solving complex problems and driving innovation in AI and data science domains. Eager to contribute technical skills and deliver impactful solutions in the field of AI.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><b>Programming:</b> Python, TypeScript, JavaScript, HTML, CSS, C++</li>
+                <li><b>Tools:</b> SQL, MySQL Workbench, Pycharm, Jupyter</li>
+                <li><b>Soft Skills:</b> Strong communication, Time management</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><b>Robo Speaker:</b> Python application using pyttsx3 for continuous speech input and voice command functionality.</li>
+                <li><b>Weather App:</b> Python script that fetches and displays real-time weather data using WeatherAPI.</li>
+                <li><b>Number Guessing Game:</b> Python-based game with user input validation and random number generation.</li>
+            </ul>
+        </div>
+
+        <!-- Professional Background Section -->
+        <div class="professional-background">
+            <h2>Professional Background</h2>
+            
+            <!-- Work Experience -->
+            <h3>Work Experience</h3>
+            <h4>AI Developer (Intern)</h4>
+            <p><i>Eziline Software House Pvt Ltd, Islamabad</i> | August 2023 – Ongoing</p>
+            <ul>
+                <li>Developed a Spam Email Classifier using Python and Natural Language Processing.</li>
+                <li>Worked on medical imaging to detect diseases, contributing to AI research in healthcare.</li>
+            </ul>
+
+            <h4>WordPress Developer</h4>
+            <p><i>Spark Solution, Sargodha</i> | January 2023 – June 2023</p>
+            <ul>
+                <li>Managed client websites, including design, deployment, and SEO optimization.</li>
+            </ul>
+
+            <!-- Education -->
+            <h3>Education</h3>
+            <ul>
+                <li><b>Bachelors of Science in Software Engineering:</b> University of Sargodha, March 2023</li>
+                <li><b>FSc Pre-Engineering:</b> Punjab Group of Colleges, May 2019</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:1alishba2abas@gmail.com">1alishba2abbas@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/alishba-abbas-1ba1a128a/">alishba-abbas</a></p>
+                <p>GitHub: <a href="https://github.com/AlishbaSoftTeche">AlishbaSoftTeche</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Alishba Abbas. All rights reserved.</p>
+    </footer>
+</body>
+</html>
